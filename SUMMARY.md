@@ -5,7 +5,7 @@
 * [HTTP的现状（未校对）](today.md)
 * [那些年，克服延迟之道（未校对）](latency.md)
 * [升级HTTP（未完成）](updating.md)
-* [http2 concept](concept.md)
+* [http2的观念（未完成）](concept.md)
 * [The http2 protocol](protocol.md)
 * [Extensions](extensions.md)
 * [A http2 world](world.md)
