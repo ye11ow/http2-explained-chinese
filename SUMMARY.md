@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Background](background.md)
    * [Author](author.md)
-   * Help!
+   * [Help!](help.md)
 * [HTTP today](today.md)
 * [Things done to overcome latency pains](latency.md)
 * [Updating HTTP](updating.md)
