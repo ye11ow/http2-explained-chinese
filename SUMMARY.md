@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Background](background.md)
-   * License
    * Document history
 * [HTTP today](today.md)
 * [Things done to overcome latency pains](latency.md)
