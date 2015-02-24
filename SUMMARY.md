@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Background](background.md)
-   * [Author](author.md)
    * [Help!](help.md)
    * License
    * Document history
