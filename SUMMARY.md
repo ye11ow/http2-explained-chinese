@@ -6,7 +6,7 @@
 * [那些年，克服延迟之道（未校对）](latency.md)
 * [升级HTTP（未完成）](updating.md)
 * [http2的观念（未完成）](concept.md)
-* [http2协议](protocol.md)
+* [http2协议（未完成）](protocol.md)
 * [Extensions](extensions.md)
 * [A http2 world](world.md)
 * [http2 in Firefox](firefox.md)
