@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Background](background.md)
-   * Author
+   * [Author](author.md)
    * Help!
 * [HTTP today](today.md)
 * [Things done to overcome latency pains](latency.md)
