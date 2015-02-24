@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Background](background.md)
 * [HTTP的现状（未校对）](today.md)
-* [Things done to overcome latency pains](latency.md)
+* [那些年，克服延迟之道(未校对)](latency.md)
 * [Updating HTTP](updating.md)
 * [http2 concept](concept.md)
 * [The http2 protocol](protocol.md)
