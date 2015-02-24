@@ -5,6 +5,7 @@
    * [Author](author.md)
    * [Help!](help.md)
    * License
+   * Document history
 * [HTTP today](today.md)
 * [Things done to overcome latency pains](latency.md)
 * [Updating HTTP](updating.md)
