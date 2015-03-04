@@ -9,3 +9,13 @@ in HTTP/2, it’s time to say goodbye. We plan to remove support for SPDY in ear
 
 
 **10.1. 首先，确保它已被启用**
+
+在地址栏里进入`chrome://flgs/#enable-spdy4`，如果没有被enable的话，点击"enable"启用它。
+
+***9.2. TLS-only**
+
+请记住Chrome只在TLS上实现了http2。你只会在看到http2只在`https://`的网站里得到支持。
+
+**9.4. 图形化HTTP/2**
+
+有一些Chrome的插件可以图形化HTTP/2，比如[SPDY Indicator](https://chrome.google.com/webstore/detail/spdy-indicator/mpbpobfflnpcgagjijhmgnchggcjblin)。
