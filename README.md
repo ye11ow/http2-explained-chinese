@@ -1,4 +1,10 @@
-GitBook Example
+前言
 =======
 
-Welcome in your GitBook!
+这篇文章（？）原作者是Daniel Stenberg，可以去他[个人网站](http://daniel.haxx.se/http2/)下载原版pdf。
+
+
+关于翻译
+======
+这是我第一次翻译这么长的文章，能力有限，如有错误或者建议都非常欢迎给我指出。谢谢！
+
