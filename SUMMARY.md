@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [简介](README.md)
 * [Background](background.md)
 * [HTTP的现状（未校对）](today.md)
 * [那些年，克服延迟之道（未校对）](latency.md)
