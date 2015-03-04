@@ -10,7 +10,7 @@
 * [Extensions](extensions.md)
 * [http2的世界](world.md)
 * [Firefox里的http2（未校对）](firefox.md)
-* [http2 in Chromium](chromium.md)
+* [Chromium里的http2（未校对）](chromium.md)
 * [http2 in curl](curl.md)
 * [After http2](after.md)
 * [Further reading](reading.md)
