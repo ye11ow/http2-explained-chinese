@@ -8,4 +8,4 @@ Chrome has supported SPDY since Chrome 6, but since most of the benefis are pres
 in HTTP/2, it’s time to say goodbye. We plan to remove support for SPDY in early 2016
 
 
-**10.1. 首先，确保它是启用**
+**10.1. 首先，确保它已被启用**
