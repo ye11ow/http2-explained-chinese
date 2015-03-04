@@ -9,7 +9,7 @@
 * [http2协议（未完成）](protocol.md)
 * [Extensions](extensions.md)
 * [http2的世界](world.md)
-* [http2 in Firefox](firefox.md)
+* [Firefox里的http2（未校对）](firefox.md)
 * [http2 in Chromium](chromium.md)
 * [http2 in curl](curl.md)
 * [After http2](after.md)
