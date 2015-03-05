@@ -2,13 +2,15 @@
 
 改善HTTP协议显然是极好的。我们可以着手于以下几个方面：
 
-  1. 让协议不要太对延迟敏感
+  1. 降低协议对延迟的敏感
   2. 修复pipelining和head of line blocking的问题
-  3. 防止主机继续的需求更多连接数量
+  3. 防止主机需求更多连接数量
   4. 保持所有现有的接口，内容，URI格式和结构
   5. 由IETF的HTTPbis工作组来建立
 
 **4.1. IETF和HTTPbis工作组**
+
+The Internet Engineering Task Force (IETF)是一个开发和推广互联网标准的组织，主要是协议层面。他们最出名的工作是TCP、DNS、FTPRFC
 
 **4.1.1. **
 
