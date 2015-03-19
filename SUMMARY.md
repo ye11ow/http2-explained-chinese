@@ -11,7 +11,7 @@
 * [http2的世界（未完成）](world.md)
 * [Firefox里的http2（未校对）](firefox.md)
 * [Chromium里的http2（未校对）](chromium.md)
-* [Curl里的http2](curl.md)
+* [Curl里的http2（未校对）](curl.md)
 * [After http2](after.md)
 * [Further reading](reading.md)
 * [Thanks](thanks.md)
