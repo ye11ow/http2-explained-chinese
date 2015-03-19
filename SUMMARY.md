@@ -7,7 +7,7 @@
 * [升级HTTP（未完成）](updating.md)
 * [http2的观念（未完成）](concept.md)
 * [http2协议（未完成）](protocol.md)
-* [扩展（未完成）](extensions.md)
+* [扩展（未校对）](extensions.md)
 * [http2的世界（未完成）](world.md)
 * [Firefox里的http2（未校对）](firefox.md)
 * [Chromium里的http2（未校对）](chromium.md)
