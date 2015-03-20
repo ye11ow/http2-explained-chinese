@@ -13,12 +13,14 @@ Spriting是一种将很多过小的图片合并成一张大图，再用Javascrit
 **3.2. 内联**
 
 内联是另外一种防止发送很多小图请求的技巧，它是通过在CSS文件里面的URLs里嵌入图片原始数据。这种方案有跟Spriting类似的优缺点。
-`.icon1 {
-    background: url(data:image/png;base64,<data>) no-repeat;
-}
-.icon2 {
-    background: url(data:image/png;base64,<data>) no-repeat;
-}`
+
+    .icon1 {
+        background: url(data:image/png;base64,<data>) no-repeat;
+	}
+    .icon2 {
+        background: url(data:image/png;base64,<data>) no-repeat;
+	}
+
 **3.3. 拼接**
 
 一个大的网站往往会包含非常多的Javascript文件，一些前端工具能帮助开发人员合并这些文件，从而让浏览器能通过一个请求下载完所有Javascrpt以节省开销。但跟上两种技巧类似的，如果某个网页只需要其中一小部分Javascript，它也必须下载完整的备份。同时一个小小的改动也会造成大量数据的重新载入。
