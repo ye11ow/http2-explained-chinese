@@ -6,7 +6,11 @@
 
 关于翻译
 =======
-这是我第一次翻译这么长的文章，能力有限，如有错误或者建议都非常欢迎给我指出。谢谢！
+
+* Calvin Zhang
+* Simon Xia
+
+如果任何翻译的问题或者建议，请在我们的[github](https://github.com/ye11ow/http2-explained-chinese)上提出，谢谢！
 
 更新日志
 =======
