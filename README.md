@@ -1,7 +1,7 @@
 前言
 =======
 
-这篇文章（？）原作者是Daniel Stenberg，可以去他[个人网站](http://daniel.haxx.se/http2/)下载原版pdf。
+这篇文档原作者是Daniel Stenberg，可以去他[个人网站](http://daniel.haxx.se/http2/)下载原版pdf。
 
 
 关于翻译
