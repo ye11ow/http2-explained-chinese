@@ -1,4 +1,4 @@
-# Chromium里的http2（未校对）
+# 10. Chromium里的http2（未校对）
 
 Chromium团队已经实现了HTTP/2并且很早之前就在dev和beta分支里面提供了支持。从2015年1月27日发布的Chrome 40起，http2已经默认为一些用户启用。刚开始用户的数量会很少，但会慢慢增加。
 
