@@ -3,7 +3,7 @@
 * [简介](README.md)
 * [背景（校对1）](background.md)
 * [HTTP的现状（校对1）](today.md)
-* [那些年，克服延迟之道（未校对）](latency.md)
+* [那些年，克服延迟之道（校对1）](latency.md)
 * [升级HTTP（未校对）](updating.md)
 * [http2的观念（未校对）](concept.md)
 * [http2协议（校对1）](protocol.md)
