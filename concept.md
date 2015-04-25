@@ -1,4 +1,4 @@
-# http2的基本概念（未校对）
+# http2的基本概念（校对1）
 
 http2到底做了些什么呢？到多远才是HTTPbis小组工作的界限？
 
@@ -24,7 +24,7 @@ HTTP 1.1本身就有定义“升级”的方案：提供一个头，让服务器
 
 这个往返通信的代价是SPDY团队不能接受的。因为他们只实现了基于TLS的SPDY，所以他们也只开发了一个TLS的扩展来简化协议的协商。这个扩展被称作Next Protocol Negotiation(NPN)，通过它，服务器通知客户端所有他支持的协议，从而让客户端从中选择一个合适的。
 
-**5.2. http2 和 https://**<!--这段比较复杂，需要review-->
+**5.2. 为https://**所准备的http2<!--这段比较复杂，需要review-->
 
 足够的关注使得http2在TLS上得以正常运作，SPDY只支持TLS，所以似乎TLS也理所应当成为http2 的必需，但结果却是http2仅将TLS作为可选部分。然而，全球两大浏览器领导者——Firefox和Chrome明确地表示，他们只实现基于TLS的http2.
 
@@ -35,17 +35,17 @@ HTTP 1.1本身就有定义“升级”的方案：提供一个头，让服务器
 类似地，还有一个激烈而长期的辩论，即当使用TLS时http2是否应该强制规定密码列表，或者应该建立一个黑名单，或者它根本就不需要从TLS层得到任何东西，而由TLS工作组来解决。
 
 
-**5.3 基于TLS的http2会话**
+**5.3 基于TLS之上的http2协商**
 
-Next Protocol Negotiation (NPN)是一个使SPDY得以与TLS服务器会话的协议。由于这不是一个正式标准，它经手IETF后，变成了——ALPN（Application Layer Protocol Negotiation）。<!--原文的IETF and ALPN怎么理解，是否有误，应该是IETF and NPN，意为NPN经由IETF变为ALPN-->ALPN被http2的使用推动，而SPDY客户端和服务器仍然使用NPN。
+Next Protocol Negotiation (NPN)是一个使SPDY在TLS服务器上进行协商的协议。由于这不是一个正式标准，它经手IETF后，变成了——ALPN（Application Layer Protocol Negotiation）。ALPN被推广用于http2，而SPDY客户端和服务器仍然使用NPN。
 
-正是由于NPN先诞生，而ALPN经过了一段时间标准化，许多早期的http2客户端和服务器在使用http2时实现了这两者的插件。并且，由于SPDY使用NPN，不少服务器同时提供SPDY和http2来支持NPN和APLN。
+由于NPN先诞生，而ALPN还经历了一些标准化过程。所以许多早期的http2客户端和服务器在协商http2时同时实现了这两者的扩展。并且，由于SPDY使用NPN，不少服务器同时提供SPDY和http2来支持NPN和APLN。
 
-ALPN和NPN的主要区别在于谁持有会话协议的决定权，ALPN是由客户端给服务器发送一个协议优先级列表，由服务器选择一个合适的。而NPN则是客户端有最终决定权。
+ALPN和NPN的主要区别在于谁持有会话协议的决定权，ALPN是由客户端给服务器发送一个协议优先级列表，由服务器最终选择一个合适的。而NPN则正好相反，是客户端有最终决定权。
 
 
-**5.4 http2 和 http://**
+**5.4 为http://**所准备的http2
 
-如前所述，对于HTTP1.1来说，升级到http2的方式就是给服务器发送一个带“升级”头部的报文。如果服务器支持http2，它将回复“101 切换”状态码并从此在本连接上使用http2。显然这个升级流程会带来一个完整的往返时延开销，但好处是http2连接相比HTTP1可以被更大限度地重用和保持。
+如前所述，对于纯文本的HTTP1.1来说，协商http2的方法就是给服务器发送一个带**升级**头部的报文。如果服务器支持http2，它将回复“101 Switching”状态码，并从此开始在本连接上使用http2。显然这个升级流程会带来一个完整的往返时延开销，但好处是http2连接相比HTTP1可以被更大限度地重用和保持。
 
-虽然有些浏览器厂商的发言人宣称他们不会实现这种http2会话方式，但IE团队已公开肯定会，与此同时，curl已经支持该方式。
+虽然有些浏览器厂商的发言人宣称他们不会实现这种http2会话方式，但IE团队已公开表示他们会实现，与此同时，curl已经支持该方式。
