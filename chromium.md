@@ -8,7 +8,7 @@ SPDY的支持将会被移除。在2015年2月的一篇[博客](http://blog.chrom
 
 **10.1. 首先，确保它已被启用**
 
-在地址栏里进入`chrome://flgs/#enable-spdy4`，如果没有被enable的话，点击"enable"启用它。
+在地址栏里进入`chrome://flags/#enable-spdy4`，如果没有被enable的话，点击"enable"启用它。
 
 ***10.2. TLS-only**
 
