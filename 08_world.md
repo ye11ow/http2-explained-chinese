@@ -68,7 +68,7 @@ Google公开[声明](http://blog.chromium.org/2015/02/hello-http2-goodbye-spdy-h
 
 **8.4.4. “TLS让速度更得更慢”**
 
-这在某种程度上是对的。TLS的握手确实增加了额外的开销，但将会有越来越多的方法来针对性地减少TLS往返的时间。使用TLS而不是纯文本带来的开销是显著的，有可观证据表明，和传输同样的流量相比，TLS会消耗更多的CPU和其他资源。具体影响有多大以及怎么影响是一个和具体测量有关的课题。更多的例子可以参看[istlsfastyet.com](http://istlsfastyet.com)。
+这个评价在某种程度上是对的。虽然TLS的握手确实增加了额外的开销，但也有越来越多的方案来减少TLS往返的时间。使用TLS而不是纯文本带来的开销是显著的，有可观证据表明，和传输同样的流量相比，TLS会消耗更多的CPU和其他资源。具体影响有多大以及怎么影响是一个和具体测量有关的课题。更多的例子可以参看[istlsfastyet.com](http://istlsfastyet.com)。
 
 Telecom和一些其他网络服务商，例如ATIS开放网络联盟，表示为了为卫星、飞机等提供的快速网络体验，他们需要一些[不加密的流量](http://www.atis.org/openweballiance/docs/OWAKickoffSlides051414.pdf )来提供caching，压缩和其他技术。
 
