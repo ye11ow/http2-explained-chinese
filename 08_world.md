@@ -84,20 +84,19 @@ http2并不强制要求使用TLS，所以我们不应该为此担心。
 
 **8.4.5. “不基于ASCII是没法忍受的”**
 
-是的，当我们可以直接“读”到协议的时候，调试和追踪都会变得更简单。但基于文本的协议更容易产生错误，造成更多解析的问题。
+虽然当我们可以直接读出协议内容的时候，调试和追踪都会变得更简单。但基于文本的协议更容易产生错误，造成更多解析的问题。
 
-如果你真的无法接受二进制协议，那么你也无法在HTTP 1.x中处理TLS和压缩。而这些其实已经被使用了很久了。
+如果你真的无法接受二进制协议，那么你也无法在HTTP 1.x中处理TLS和压缩。而这些技术其实已经被使用了很久了。
 
 **8.4.6. “它根本没有比HTTP/1.1快”**
 
-当然，到底该如何定义和测量“快”就是另外一个话题了，但在SPDY的时代，已经有一些实验证明了该协议会让浏览器载入页面更快（例如华盛顿大学的“[SPDY有多快？](https://www.usenix.org/system/files/conference/nsdi14/nsdi14-paper-wang_xiao_sophia.pdf)”和Hervé Servy的“[评估启用SPDY的Web服务器性能](http://www.neotys.com/blog/performance-of-spdy-enabled-web-servers/)”）。同样，这些实验也被用来证明http2。我期待能有越来越多的测试实验发布。[httpwatch.com](http://blog.httpwatch.com/2015/01/16/a-simple-performance-comparison-of-https-spdy-and-http2/)也有进行一个简单的测试来证明HTTP/2名副其实。
+当然，到底该如何定义和测量“快”就是另外一个话题了，但在SPDY的时代，已经有一些实验证明了该协议会让浏览器载入页面更快（例如华盛顿大学的“[SPDY有多快？](https://www.usenix.org/system/files/conference/nsdi14/nsdi14-paper-wang_xiao_sophia.pdf)”和Hervé Servy的“[评估启用SPDY的Web服务器性能](http://www.neotys.com/blog/performance-of-spdy-enabled-web-servers/)”），同样这些实验也被用来证明http2。我期待能有越来越多的测试实验发布。[httpwatch.com](http://blog.httpwatch.com/2015/01/16/a-simple-performance-comparison-of-https-spdy-and-http2/)也有进行一个简单的测试来证明HTTP/2名副其实。<!-- 那一句“我也期待XX”放在那怪怪的 -->
 
-http2在很多的场景下都证明了自己更快，包含非常多资源的高延迟的连接上。而正如之前的章节中提到，目前的趋势就是每个网站包含越来越多的资源和数据。
+http2在很多的场景下都证明了自己更快，尤其是在之前的章节中提到的包含非常多资源的高延迟连接上。而目前的趋势正式每个网站包含越来越多的资源和数据。
 
 **8.4.7. “它违反了网络分层”**
 
 你是认真的么？网络分层并不是不可侵犯的。如果我们在指定http2的时候已经踏入了灰色地带，那我们当然可以尝试在限制内制定出更好更高效的协议。
-
 
 **8.4.8. “它没有修复一些HTTP/1.1的问题”**
 
