@@ -1,4 +1,4 @@
-**Notice:** This is the Simplified Chinese translation of *[http2 explained](http://daniel.haxx.se/http2/)*. Thanks **Daniel Stenberg** for his great work!
+**Notice:** This is the Simplified Chinese translation of *[http2 explained](http://daniel.haxx.se/http2/)*. Thank **[Daniel Stenberg](http://daniel.haxx.se/)** for his great work!
 
 前言
 =======
