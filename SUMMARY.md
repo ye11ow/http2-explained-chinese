@@ -8,7 +8,7 @@
 * [http2的观念（校对1）](05_concept.md)
 * [http2协议（校对1）](06_protocol.md)
 * [扩展（校对1）](07_extensions.md)
-* [http2的世界（未校对）](08_world.md)
+* [http2的世界（校对1）](08_world.md)
 * [Firefox里的http2（校对1）](09_firefox.md)
 * [Chromium里的http2（校对1）](10_chromium.md)
 * [Curl里的http2（未校对）](11_curl.md)
