@@ -11,8 +11,8 @@
 * [http2的世界（校对1）](08_world.md)
 * [Firefox里的http2（校对1）](09_firefox.md)
 * [Chromium里的http2（校对1）](10_chromium.md)
-* [Curl里的http2（未校对）](11_curl.md)
-* [后http2时代（未校对）](12_after.md)
-* [扩展阅读（未校对 ）](13_further.md)
-* [致谢（未完成）](14_thanks.md)
+* [Curl里的http2（校对1）](11_curl.md)
+* [后http2时代（校对1）](12_after.md)
+* [扩展阅读（校对1）](13_further.md)
+* [致谢（校对1）](14_thanks.md)
 

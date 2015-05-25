@@ -9,9 +9,13 @@
 
 中文版暂时发布在Gitbook上，请[点此阅读](https://www.gitbook.com/book/ye11ow/http2-explained/details)
 
+翻译进度
+=======
+正在进行第二遍review，对应英文原始版本1.12
 
-关于翻译
+关于翻译者
 =======
 
 * Calvin Zhang
 * Simon Xia
+
