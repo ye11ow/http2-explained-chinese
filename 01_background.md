@@ -1,12 +1,14 @@
-# 1. 背景（校对1）
+# 1. 背景（校对2）
 
 这篇文档会从技术和协议层面介绍http2。文档起源于2014年4月我在斯德哥尔摩做了一次相关的演讲，在那之后我对演讲内容的细节进行了一些解释和补充，从而写出了这篇文档。
 
-2015年2月18日，最终版本的http2规范制定完成，并且被IESG核准。当前版本是[draft-17](p://tools.ietf.org/html/draft-ietf-httpbis-http)，而这就是终将成为RFC的协议规范。这篇文档中的所有错误都是我能力所限造成，如有发现，欢迎指正，我会在后续版本中更新。
+正式版http2规格标准叫做RFC 7540，发布于2015年5月15日：http://www.rfc-editor.org/rfc/rfc7540.txt
+
+如果你有在这篇文章中发现任何我的失误造成的错误或疏漏，请帮我指正。我会在后续版本中修改。
 
 为了让阅读体验更流畅，在这篇文章中我会使用“http2”来指代这一新协议，但请记住该协议的正式名字是HTTP/2。
 
-*这篇文档版本为1.10，发布于2015年2月18日。*
+*这篇文档版本为1.12，发布于2015年5月21日。*
 
 **1.1. 关于作者**
 
@@ -20,17 +22,27 @@
 
 **1.2. 帮助我！**
 
-如果你在该文档里面发现任何错误、遗漏，请发送给我一份相关段落更改后的版本，我会进行修正并且注明所有对文档有贡献的人！希望这份文档能越来越好。
+如果你在该文档里面发现任何错误、疏漏，请发送给我一份相关段落更改后的版本，我会进行修正并且注明所有对文档有贡献的人！希望这份文档能越来越好。
 
 这篇文档可以在[http://daniel.haxx.se/http2](http://daniel.haxx.se/http2)下载。
 
-**1.3. 许可**
+**1.3. 许可证**
 
 这篇文档基于Createive Commons Attribution 4.0发布： [http://creativecommons.org/licenses/by/4.0/](http://creativecommons.org/licenses/by/4.0/)
 
 **1.4. 文档历史**
 
-该文档的第一版于2014年4月25日发布。下面是最近主要改动的更新历史。
+该文档的第一版发布于2014年4月25日。下面是最近主要改动的更新历史。
+
+**Version 1.12:**
+* 1.1: HTTP/2 is now in an official RFC
+* 6.5.1: link to the HPACK RFC
+* 9.1: mention the Firefox 36+ config switch for http2
+* 12.1: Added section about QUIC
+
+**Version 1.11:**
+* Lots of language improvements mostly pointed out by friendly contributors
+* 8.3.1: mention nginx and Apache httpd specific acitivities
 
 **Version 1.10:**
 * 1: the protocol has been “okayed”
@@ -60,3 +72,5 @@
 * Linkifid many URLs
 * Added a few questions in 8.4
 * Mentions IETF Last Call
+
+<!-- Review备注：这一章翻译已经没有明显问题。 -->

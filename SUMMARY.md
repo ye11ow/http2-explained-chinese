@@ -1,7 +1,7 @@
 # Summary
 
 * [简介](README.md)
-* [背景（校对1）](01_background.md)
+* [背景（校对2）](01_background.md)
 * [HTTP的现状（校对1）](02_today.md)
 * [那些年，克服延迟之道（校对1）](03_latency.md)
 * [升级HTTP（校对1）](04_updating.md)
