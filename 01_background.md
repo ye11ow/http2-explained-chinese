@@ -30,6 +30,9 @@
 
 这篇文档基于Createive Commons Attribution 4.0发布： [http://creativecommons.org/licenses/by/4.0/](http://creativecommons.org/licenses/by/4.0/)
 
+![](imgs/license.png)
+
+
 **1.4. 文档历史**
 
 该文档的第一版发布于2014年4月25日。下面是最近主要改动的更新历史。
