@@ -4,7 +4,7 @@ Chromium团队并且很早之前就已经在dev和beta分支里面实现并支�
 
 SPDY的支持将会被移除。在2015年2月的一篇[博客](http://blog.chromium.org/2015/02/hello-http2-goodbye-spdy-http-is_9.html)里面有如下一段话：
 
-> “Chrome自从6之后就开始支持SPDY，但既然现在它的优势已经被HTTP/2所取代, 现在是时候说再见了。我们计划在2016年早些时候移出对SPDY的支持”
+> “Chrome自从6之后就开始支持SPDY，但既然现在它的优势已经被HTTP/2所取代, 现在是时候说再见了。我们计划在2016年早些时候移除对SPDY的支持”
 
 **10.1. 首先，确保它已被启用**
 
