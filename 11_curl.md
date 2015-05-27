@@ -16,7 +16,7 @@ curl通过升级头部支持基于标准TCP的http2. 当发起一个使用http2�
 ##11.3 TLS和相关库
 由于curl的TLS后端，它支持相当大范围的TLS库，并且此后端对http2的支持依然有效。TLS兼容http2的挑战来自于对APLN以及一些NPN扩展的支持。
 
-基于最新版本的OpenSSL或NSS编译curl可以同时获得ALPN和NPN支持，而使用GunTLS或PolarSSL只能得到ALPN。
+基于最新版本的OpenSSL或NSS编译curl可以同时获得ALPN和NPN支持，而使用GnuTLS或PolarSSL只能得到ALPN。
 
 ##11.4 命令行中使用
 无论是用纯文本还是通过TLS，必须使用 -http2 选项告知curl使用http2。默认情况下，curl依旧使用HTTP/1.1。
