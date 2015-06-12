@@ -10,7 +10,7 @@ SPDY的支持将会被移除。在2015年2月的一篇[博客](http://blog.chrom
 
 在地址栏里进入`chrome://flags/#enable-spdy4`，如果没有被enable的话，点击"enable"启用它。
 
-***10.2. TLS-only**
+**10.2. TLS-only**
 
 请记住Chrome只在TLS上实现了http2。你只会在看到http2只在`https://`的网站里得到支持。
 
