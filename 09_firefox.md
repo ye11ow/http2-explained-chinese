@@ -8,7 +8,7 @@ Firefox紧跟着草案，并且很早之前就实现了http2的测试实现。�
 
 在地址栏里进入'about:config'，再搜索一个名为“network.http.spdy.enabled.http2draft”的选项，确保它被设置为`true`。
 
-***9.2. 仅限TLS**
+**9.2. 仅限TLS**
 
 请记住Firefox只在TLS上实现了http2。你只会在看到http2只在`https://`的网站里得到支持。
 
