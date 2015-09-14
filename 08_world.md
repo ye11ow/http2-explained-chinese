@@ -112,7 +112,7 @@ Google向世界展示了他们的SPDY，证明了像这样的新协议也能在�
 
 我认为建立在SPDY的基本范式之上的http2会被更广泛的部署，毕竟它是IETF制定的协议。而SPDY因为背负了“它是Google的协议”这个恶名，导致它的发展总是畏首畏脚。
 
-在它首次发布的幕后有很多大型浏览器支持。来自Freifox，Chrome和IE的代表宣布了他们会发布支持http2特性的浏览器，并且他们已经演示了一些能正常运作的实现。
+在它首次发布的幕后有很多大型浏览器支持。来自Firefox，Chrome和IE的代表宣布了他们会发布支持http2特性的浏览器，并且他们已经演示了一些能正常运作的实现。
 
 也有很多像Google，Twitter和Facebook这样的大公司希望尽快支持http2，所以我们可以期待着很快能有支持http2的服务器（例如Apache HTTP Server和nginx）。[H2o](https://github.com/h2o/h2o)作为一个极有潜力的新生HTTP服务器，也同样支持http2。
 
