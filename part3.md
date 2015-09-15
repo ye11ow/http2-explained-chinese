@@ -2,18 +2,17 @@
 
 再困难的问题也有解决的方案，但这些方案却良莠不齐。
 
-**3.1. Spriting** 
+## 3.1. Spriting 
 <!-- Spriting有任何中文翻译么？雪碧图？精灵图？ -->
+<img style="float: right;" src="https://raw.githubusercontent.com/bagder/http2-explained/master/images/spriting.jpg" />
 
 Spriting是一种将很多较小的图片合并成一张大图，再用JavaScript或者CSS将小图重新“切割”出来的技术。
 
 网站可以用该技术来提速：在HTTP 1.1里，下载一张大图比下载100张小图快得多。
 
-![](imgs/spriting.png)
-
 但是当某些页面只需要显示其中几张小图时，这种方案的缺点就凸显出来了：它必须将整张大图都从cache里取出，而不能将最频繁使用的那些图片保留在cache里。
 
-**3.2. 内联（Inlining）**
+## 3.2. 内联（Inlining）
 
 内联是另外一种防止发送很多小图请求的技巧，它将图片的原始数据嵌入在CSS文件里面的URL里。而这种方案的优缺点跟Spriting很类似。
 
@@ -24,13 +23,13 @@ Spriting是一种将很多较小的图片合并成一张大图，再用JavaScrip
         background: url(data:image/png;base64,<data>) no-repeat;
 	}
 
-**3.3. 拼接（Concatenation）**
+## 3.3. 拼接（Concatenation）
 
 大型网站往往会包含大量的JavaScript文件。一些前端工具能帮助开发人员将这些文件合并为一个大的文件，从而让浏览器能通过一个请求下载完，而不是发无数请求来分别下载那些小的JavaScript。但如果某页面只需要其中一小部分代码，它也必须下载完整的那份。而一个小小的文件改动也会造成大量数据的重载。
 
 这种手段也给开发者造成了很大的不便。
 
-**3.4 分片（Sharding）**
+## 3.4 分片（Sharding）
 
 最后一个我要说的性能优化技术叫做分片。顾名思义，分片就是把你的服务分散在尽可能多的主机上。这种方案乍一听比较奇怪，但是实际上在它背后却有非常深刻的道理！
 
@@ -42,6 +41,6 @@ Spriting是一种将很多较小的图片合并成一张大图，再用JavaScrip
 
 下面的图片展示了访问一个瑞典著名网站的时候的数据包，请注意这些请求是如何被分发到不同主机的。
 
-![](imgs/requests.png)
+![image sharding at expressen.se](https://raw.githubusercontent.com/bagder/http2-explained/master/images/expressen-sharding.jpg)
 
 <!-- Review备注：这一章翻译已经没有明显问题。 -->

@@ -6,14 +6,14 @@ SPDY的支持将会被移除。在2015年2月的一篇[博客](http://blog.chrom
 
 > “Chrome自从6之后就开始支持SPDY，但既然现在它的优势已经被HTTP/2所取代, 现在是时候说再见了。我们计划在2016年早些时候移除对SPDY的支持”
 
-**10.1. 首先，确保它已被启用**
+## 10.1. 首先，确保它已被启用
 
 在地址栏里进入`chrome://flags/#enable-spdy4`，如果没有被enable的话，点击"enable"启用它。
 
-**10.2. TLS-only**
+## 10.2. TLS-only
 
 请记住Chrome只在TLS上实现了http2。你只会在看到http2只在`https://`的网站里得到支持。
 
-**10.3. 图形化HTTP/2**
+## 10.3. 图形化HTTP/2
 
 有一些Chrome的插件可以图形化HTTP/2，比如[SPDY Indicator](https://chrome.google.com/webstore/detail/spdy-indicator/mpbpobfflnpcgagjijhmgnchggcjblin)。
