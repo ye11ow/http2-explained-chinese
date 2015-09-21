@@ -88,7 +88,7 @@ http2并不强制要求使用TLS，所以我们不应该为此担心。
 
 ### 8.4.6. “它根本没有比HTTP/1.1快”
 
-当然，到底该如何定义和测量“快”就是另外一个话题了，但在SPDY的时代，已经有一些实验证明了该协议会让浏览器载入页面更快（例如华盛顿大学的“[SPDY有多快？](https://www.usenix.org/system/files/conference/nsdi14/nsdi14-paper-wang_xiao_sophia.pdf)”和Hervé Servy的“[评估启用SPDY的Web服务器性能](http://www.neotys.com/blog/performance-of-spdy-enabled-web-servers/)”），同样这些实验也被用来证明http2。我期待能有越来越多的测试实验发布。[httpwatch.com](http://blog.httpwatch.com/2015/01/16/a-simple-performance-comparison-of-https-spdy-and-http2/)也有进行一个简单的测试来证明HTTP/2名副其实。<!-- 那一句“我也期待XX”放在那怪怪的 -->
+当然，到底该如何定义和测量“快”就是另外一个话题了，但在SPDY的时代，已经有一些实验证明了该协议会让浏览器载入页面更快（例如华盛顿大学的[“SPDY有多快？”](https://www.usenix.org/system/files/conference/nsdi14/nsdi14-paper-wang_xiao_sophia.pdf)和Hervé Servy的[“评估启用SPDY的Web服务器性能”](http://www.neotys.com/blog/performance-of-spdy-enabled-web-servers/)），同样这些实验也被用来证明http2。我期待能有越来越多的测试实验发布。[httpwatch.com的一个简单测试](http://blog.httpwatch.com/2015/01/16/a-simple-performance-comparison-of-https-spdy-and-http2/)也能证明HTTP/2名副其实。<!-- 那一句“我也期待XX”放在那怪怪的 -->
 
 http2在很多的场景下都证明了自己更快，尤其是在包含非常多资源的高延迟的连接上。而正如之前的章节中提到，目前的趋势就是每个网站包含越来越多的资源和数据。
 
@@ -110,7 +110,7 @@ Google向世界展示了他们的SPDY，证明了像这样的新协议也能在�
 
 我认为建立在SPDY的基本范式之上的http2会被更广泛的部署，毕竟它是IETF制定的协议。而SPDY因为背负了“它是Google的协议”这个恶名，导致它的发展总是畏首畏脚。
 
-在它首次发布的幕后有很多大型浏览器支持。来自Firefox，Chrome和IE的代表宣布了他们会发布支持http2特性的浏览器，并且他们已经演示了一些能正常运作的实现。
+在它首次发布的幕后有很多大型浏览器支持。来自Firefox，Chrome，Safari，Internet Explorer和Opera的代表宣布了他们会发布支持http2特性的浏览器，并且他们已经演示了一些能正常运作的实现。
 
 也有很多像Google，Twitter和Facebook这样的大公司希望尽快支持http2，所以我们可以期待着很快能有支持http2的服务器（例如Apache HTTP Server和nginx）。[H2o](https://github.com/h2o/h2o)作为一个极有潜力的新生HTTP服务器，也同样支持http2。
 
@@ -118,4 +118,4 @@ Google向世界展示了他们的SPDY，证明了像这样的新协议也能在�
 
 我也相信一旦规范被RFC批准，会有更多的实现雨后春笋般的涌现出来。
 
-在2015年1月下旬，默认启用HTTP/2的Firefox 35发布后，Google也宣布Chrome 40对2%的用户启用了该功能。虽然他没有告诉我们具体的数字，但HTTP/2已经差不多占到了他们全球流量的5%。与此同时，Firefox 35记录到了9%的相应都是HTTP/2。
+纵观2015年，http2的流量正在逐步上升。9月初，Firefox 40中http2流量占据了所有HTTP流量中的13%，HTTPS中的27%。与此同时，Google表示约有18%的流量来自HTTP/2。值得注意的是，Google同时也在实验其他协议（参见12.1中的QUIC），这也使得http2的使用量暂时比正常值低一些。
