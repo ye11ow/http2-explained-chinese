@@ -6,7 +6,7 @@ Firefox紧跟着草案，并且很早之前就实现了http2的测试实现。�
 
 从发布于2015年1月13日的Firefox 35之后，http2支持是默认开启的。
 
-在地址栏里进入'about:config'，再搜索一个名为“network.http.spdy.enabled.http2draft”的选项，确保它被设置为`true`。
+在地址栏里进入'about:config'，再搜索一个名为“network.http.spdy.enabled.http2draft”的选项，确保它被设置为`true`。Firefox 36添加了一个“network.http.spdy.enabled.http2”的配置项，并默认设置为*true*。后者控制的是“纯”http2版本，而前者控制了启用／禁用通过http2草案版本进行协商。从Firefox 36之后，这两者都默认为true。
 
 ## 9.2. 仅限TLS
 
@@ -22,4 +22,4 @@ Firefox紧跟着草案，并且很早之前就实现了http2的测试实现。�
 
 ## 9.4. 图形化HTTP/2
 
-有一些Firefox的插件可以图形化HTTP/2，比如[SPDY Indicator](https://addons.mozilla.org/en-US/firefox/addon/spdy-indicator/)。
+有一些Firefox的插件可以图形化HTTP/2，比如[“SPDY Indicator”](https://addons.mozilla.org/en-US/firefox/addon/spdy-indicator/)。
