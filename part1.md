@@ -1,6 +1,6 @@
 # 1. 背景
 
-这篇文档会从技术和协议层面介绍http2。文档起源于2014年4月我在斯德哥尔摩做了一次相关的演讲，在那之后我对演讲内容的细节进行了一些解释和补充，从而写出了这篇文档。
+这篇文档会从技术和协议层面来介绍http2。文档起源于2014年4月我在斯德哥尔摩做了一次相关的演讲，在那之后我对演讲内容的细节进行了一些解释和补充，从而写出了这篇文档。
 
 正式版http2规格标准叫做RFC 7540，发布于2015年5月15日：http://www.rfc-editor.org/rfc/rfc7540.txt
 
@@ -15,9 +15,9 @@
   Email: daniel@haxx.se
 
   Twitter: [@bagder](https://twitter.com/bagder)
-  
+
   Web: [daniel.haxx.se](http://daniel.haxx.se/)
-  
+
   Blog: [daniel.haxx.se/blog](http://daniel.haxx.se/blog/)
 
 ## 1.2 帮助我！
@@ -39,35 +39,35 @@
 ### Version 1.13
 
 - Converted the master version of this document to Markdown syntax
-- 13: Mention more resources, updated links and descriptions 
-- 12: Updated the QUIC description with reference to draft 
-- 8.5: Refreshed with current numbers 
-- 3.4: The average is now 40 TCP connections 
-- 6.4: Updated to reflect what the spec says 
+- 13: Mention more resources, updated links and descriptions
+- 12: Updated the QUIC description with reference to draft
+- 8.5: Refreshed with current numbers
+- 3.4: The average is now 40 TCP connections
+- 6.4: Updated to reflect what the spec says
 
 ### Version 1.12
 
-- 1.1: HTTP/2 is now in an official RFC 
-- 6.5.1: Link to the HPACK RFC 
-- 9.1: Mention the Firefox 36+ config switch for http2 
-- 12.1: Added section about QUIC 
+- 1.1: HTTP/2 is now in an official RFC
+- 6.5.1: Link to the HPACK RFC
+- 9.1: Mention the Firefox 36+ config switch for http2
+- 12.1: Added section about QUIC
 
 ### Version 1.11
 
-- Lots of language improvements mostly pointed out by friendly contributors 
-- 8.3.1: Mention nginx and Apache httpd specific acitivities 
+- Lots of language improvements mostly pointed out by friendly contributors
+- 8.3.1: Mention nginx and Apache httpd specific acitivities
 
 ### Version 1.10
 
-- 1: The protocol has been “okayed” 
-- 4.1: Refreshed the wording since 2014 is last year 
-- Front: Added image and call it “http2 explained” there, fixed link 
-- 1.4: Added document history section 
-- Many spelling and grammar mistakes corrected 
-- 14: Added thanks to bug reporters 
-- 2.4: Better labels for the HTTP growth graph 
-- 6.3: Corrected the wagon order in the multiplexed train 
-- 6.5.1: HPACK draft-12 
+- 1: The protocol has been “okayed”
+- 4.1: Refreshed the wording since 2014 is last year
+- Front: Added image and call it “http2 explained” there, fixed link
+- 1.4: Added document history section
+- Many spelling and grammar mistakes corrected
+- 14: Added thanks to bug reporters
+- 2.4: Better labels for the HTTP growth graph
+- 6.3: Corrected the wagon order in the multiplexed train
+- 6.5.1: HPACK draft-12
 
 ### Version 1.9
 
