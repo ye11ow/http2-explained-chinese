@@ -48,8 +48,8 @@ HTTP Pipelining是这样一种技术：在等待上一个请求响应的同时�
 
 但是，另起新队伍会导致资源耗费和性能损失（译者注：新建 TCP 连接的开销非常大）。这种另起新队伍的方式只在新队伍数量很少的情况下有作用，因此它并不具备可扩展性。（译者注：这段话意思是说，靠大量新建连接是不能有效解决延迟问题的，即HTTP Pipelining并不能彻底解决Head of line blocking问题。）所以针对此问题并没有完美的解决方案。
 
-即使在2015年的今天，大部分桌面浏览器也默认关闭了HTTP pipelining功能。
+这就是为什么，即使在2015年的今天，大部分桌面浏览器仍然会选择默认关闭HTTP pipelining这一功能的原因。
 
-关于这个问题的更多细节，可以参阅Firefox的 [bugzilla #264354](https://bugzilla.mozilla.org/show_bug.cgi?id=264354)。
+而关于这个问题的更多细节，可以参阅Firefox的 [bugzilla #264354](https://bugzilla.mozilla.org/show_bug.cgi?id=264354)。
 
 <!-- Review备注：2.6需要深度review，其余地方没有太大问题。 -->
