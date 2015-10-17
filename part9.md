@@ -12,7 +12,7 @@ Firefox紧跟着草案，并且很早之前就实现了http2的测试实现。�
 
 请记住Firefox只在TLS上实现了http2。你只会在看到http2只在`https://`的网站里得到支持。
 
-## 9.3. 透明！
+## 9.3. 透明！ <!--这个标题改成： 一切都是透明的  怎么样-->
 
 ![transparent http2 use](https://raw.githubusercontent.com/bagder/http2-explained/master/images/firefox-screenshot.png)
 
