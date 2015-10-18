@@ -11,6 +11,6 @@
 * [Firefox里的http2](part9.md)
 * [Chromium里的http2](part10.md)
 * [Curl里的http2](part11.md)
-* [后http2时代](part12.md) 
+* [后http2时代](part12.md)
 * [扩展阅读](part13.md)
 * [致谢](part14.md)

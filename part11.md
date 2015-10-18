@@ -2,13 +2,13 @@
 
 [curl项目](http://curl.haxx.se/)从2013年9月就开始对http2提供实验性的支持。
 
-为了遵从curl的要旨，我们尽可能全方位地支持http2。curl通常被当作一个网站连接测试工具，希望这也能在http2上得以延续。
+为了遵从curl的要旨，我们尽可能全方位地支持http2。curl通常被用作一个网站连接测试工具，希望这项使命也能在http2上被得以延续。
 
 curl使用一个叫做[nghttp2](https://nghttp2.org/)的库来提供http2帧层的支持。curl依赖于nghttp2 1.0以上版本。
 
 请注意当前linux curl和libcurl并没有默认启用对HTTP/2协议的支持。
 
-## 11.1. 跟HTTP 1.x非常相似 
+## 11.1. 跟HTTP 1.x非常相似
 
 curl会在内部把收到的http2头部转换为HTTP1.x风格的头部再呈现给用户，这样一来，它们就和目前的HTTP非常类似。这也使得无论是用curl还是HTTP，转换都非常容易。<!-- TOREVIEW -->类似地，curl会用相同的方式对发出的HTTP头部做转换，即发给curl的HTTP 1.x风格头部会在被发送到http2服务器之前完成转换。这使得户无需关心底层到底使用的是哪个版本的HTTP协议。
 
@@ -24,7 +24,7 @@ curl可以使用许多不同TLS的底层库来提供TLS支持，http2也得这�
 
 ## 11.4. 命令行中使用
 
-无论是用纯文本还是通过TLS，必须使用`--http2`参数来让curl使用http2。默认未使用该参数的情况下，curl会使用HTTP/1.1。
+无论是用纯文本还是通过TLS，必须使用`--http2`参数来让curl使用http2。在未使用该参数的默认情况下，curl会使用HTTP/1.1。
 
 ## 11.5. libcurl参数
 
