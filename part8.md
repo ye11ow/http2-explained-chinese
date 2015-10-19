@@ -14,13 +14,13 @@ http2减少了网络往返传输的数量，并且用多路复用和快速丢弃
 
 所有这些加起来，我认为页面载入时间和站点相应的速度都会更快。简而言之，它们都代表着 —— 更好的web体验。
 
-但到底能变得多快，到底提升有多大呢？我认为目前很难说清楚。毕竟这些技术依然在早期，我们还没法看见客户端和服务器实现这些并真正受益于新协议所提供的强大功能。
+但到底能变得多快，到底提升有多大呢？我认为目前很难说清楚。毕竟这些技术依然在早期阶段，我们还没法看见客户端和服务器实现这些并真正受益于它们所提供的强大功能。
 
 ## 8.2. http2会如何影响web开发？
 
-近年来，web开发者、web开发环境为HTTP 1.1存在的一些问题提供了一部分临时的解决方案。不妨简单的回忆一下，其中的一部分我已在上文中简单的介绍了。
+近年来，web开发者、web开发环境为HTTP 1.1存在的一些问题提供了一部分临时的解决方案。其中的一部分我已在上文中简单的介绍了，不妨简单的回忆一下。
 
-很多是工具和开发者可能会默认使用这些方案，但它们其中的一部分可能会损害到http2的性能，或者至少让我们没法真正利用到http2新提供的强大威力。Spriting和内联应该是http2里面最不需要的了。因为http2更倾向于使用更少的连接，所以Sharding甚至会伤害到http2的性能。
+很多工具和开发者可能会默认使用这些方案，但它们其中的一部分也许会损害到http2的性能，或者至少让我们没法真正利用到http2新提供的强大威力。Spriting和内联应该是http2里面最不需要的了。因为http2更倾向于使用更少的连接，所以Sharding甚至会伤害到http2的性能。
 
 这里的问题就是：web网站和web开发们至少在短期内需要同时支持HTTP 1.1和http2的客户端。否则的话，使所有用户获得最好的体验将是一个挑战。 <!--这段我觉得还需要review下，语义不太通-->
 
@@ -42,9 +42,9 @@ Firefox一直紧跟最新的协议，Twitter也紧追不舍提供了基于http2�
 
 事实上，已经有不少的服务器实现了http2。
 
-时下最流行的Nginx自1.9.5(发布于2015年9月22号)版本后提供了对http2的支持并且取缔了原来的SPYD的支持模块(因此SPYD和http2无法同时运行在同一个Nginx服务器实例中)。
+时下最流行的Nginx自1.9.5(发布于2015年9月22号)版本后提供了对http2的支持并且取缔了原来的SPYD模块(因此SPYD和http2无法同时运行在同一个Nginx服务器实例中)。
 
-而Apache的HTTPD服务器正在实现一个名为[mod_http2](https://httpd.apache.org/docs/2.4/mod/mod_http2.html)的http2模块，预计将会在2.4.17的版本中实装。
+而Apache HTTPD服务器也正在实现一个名为[mod_http2](https://httpd.apache.org/docs/2.4/mod/mod_http2.html)的http2模块，预计将会在2.4.17的版本中实装。
 
 此外，[H2O](https://h2o.examp1e.net/), [Apache Traffic Server](http://trafficserver.apache.org/), [nghttp2](https://nghttp2.org/), [Caddy](http://caddyserver.com/) 以及 [LiteSpeed](https://www.litespeedtech.com/products/litespeed-web-server/overview) 也都发布了可以工作于http2下的服务器。
 
@@ -53,7 +53,7 @@ Firefox一直紧跟最新的协议，Twitter也紧追不舍提供了基于http2�
 
 curl和libcurl支持未加密的http2并借助某些TLS库支持了TLS版本。
 
-Wireshark同样支持了http2, 用它来分析http2网络数据流着实是再好不过的了。
+Wireshark同样支持了http2, 所以用它来分析http2网络数据流着实是再好不过的了。
 
 <!--由于上面几个section已经被原作者修改，较原译已有一些区别，重新翻译了一下因而等待review-->
 
@@ -121,7 +121,7 @@ Telecom和一些其他网络服务商，例如ATIS开放网络联盟，表示为
 
 Google向世界展示了他们的SPDY，证明了像这样的新协议也能在足够短的时间内拥有多种实现，并且能被浏览器和服务所采用。虽然如今支持SPDY服务器端数量在1%以内，但通过这些服务器所交换的数据却要大很多。很多非常流行的网站现在也有提供SPDY支持。
 
-我认为建立在SPDY的基本范式之上的http2会被更广泛的部署，更因为它是一个IETF制定的协议。而SPDY则因为背负了“它是Google的协议”这个恶名，导致它的发展总是畏首畏脚。
+我认为建立在SPDY的基本范式之上的http2会被更广泛的部署，其中一个主要的原因是：它是一个IETF制定的协议。而SPDY则因为背负了“它是Google的协议”这个恶名，导致它的发展总是畏首畏脚。
 
 在它首次发布的幕后有很多大型浏览器支持。来自Firefox，Chrome，Safari，Internet Explorer和Opera的代表宣布了他们会发布支持http2特性的浏览器，并且他们已经演示了一些能正常运作的实现。
 
