@@ -22,7 +22,7 @@ http2是一个二进制协议。
 
 http2会发送有着不同类型的二进制帧，但他们都有如下的公共字段：
 
-Type, Length, Flags, Steam Identifier和frame payload <!-- 这些字段要翻译么？ -->
+Type, Length, Flags, Stream Identifier和frame payload <!-- 这些字段要翻译么？ -->
 
 规范中一共定义了10种不同的帧，其中最基础的两种分别对应于HTTP 1.1的DATA和HEADERS。之后我会更详细的介绍它们其中的一部分。
 
