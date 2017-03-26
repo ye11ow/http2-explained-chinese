@@ -42,7 +42,7 @@ Firefox一直紧跟最新的协议，Twitter也紧追不舍提供了基于http2�
 
 时下最流行的Nginx自1.9.5(发布于2015年9月22号)版本后提供了对http2的支持并且取缔了原来的SPYD模块(因此SPYD和http2无法同时运行在同一个Nginx服务器实例中)。
 
-而Apache HTTPD服务器也正在实现一个名为[mod_http2](https://httpd.apache.org/docs/2.4/mod/mod_http2.html)的http2模块，预计将会在2.4.17的版本中实装。
+Apache的httpd自2015年12月9日发布的2.4.17起，也有个http2模块[mod_http2](https://httpd.apache.org/docs/2.4/mod/mod_http2.html)。
 
 此外，[H2O](https://h2o.examp1e.net/), [Apache Traffic Server](http://trafficserver.apache.org/), [nghttp2](https://nghttp2.org/), [Caddy](http://caddyserver.com/) 以及 [LiteSpeed](https://www.litespeedtech.com/products/litespeed-web-server/overview) 也都发布了可以工作于http2下的服务器。
 
@@ -60,7 +60,7 @@ Wireshark同样支持了http2, 所以用它来分析http2网络数据流着实�
 
 江湖上有太多传言暗示着这个世界越来越被Google所控制，但事实显然并非如此。这个协议是IETF制定的，就跟过去30年间很多其他协议一样。但不得不承认，SPDY是Google非常出色的成果。它不仅仅证明了开发一个新协议的可行性，还充分展现了新协议能带来的好处。
 
-而Google也公开的[声明](http://blog.chromium.org/2015/02/hello-http2-goodbye-spdy-http-is_9.html)了他们会在2016年移除Chrome里对SPDY和NPN的支持，并且极力推动服务器迁移至HTTP/2。
+而Google也公开的[声明](https://blog.chromium.org/2015/02/hello-http2-goodbye-spdy.html)了他们会在2016年移除Chrome里对SPDY和NPN的支持，并且极力推动服务器迁移至HTTP/2。
 
 ### 8.4.2. “这个协议只在浏览器上有用”
 
