@@ -39,8 +39,6 @@ http2会发送有着不同类型的二进制帧，但他们都有如下的公共
 
 ![multiplexed train](https://raw.githubusercontent.com/bagder/http2-explained/master/images/train-multiplexed.jpg)
 
-在http2里面，我们很容易可以看到10个甚至100个同时存在的流，而创建一个新的流的代价也非常低。
-
 ## 6.4. 优先级和依赖性
 
 每个流都包含一个优先级（也就是“权重”），它被用来告诉对端哪个流更重要。当资源有限的时候，服务器会根据优先级来选择应该先发送哪些流。
