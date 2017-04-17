@@ -4,7 +4,7 @@
 * [HTTP的现状](part2.md)
 * [那些年，克服延迟之道](part3.md)
 * [升级HTTP](part4.md)
-* [http2的观念](part5.md)
+* [http2的概念](part5.md)
 * [http2协议](part6.md)
 * [扩展](part7.md)
 * [http2的世界](part8.md)
