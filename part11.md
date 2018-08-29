@@ -1,6 +1,6 @@
 # 11. curl中的http2
 
-[curl项目](http://curl.haxx.se/)从2013年9月就开始对http2提供实验性的支持。
+[curl项目](https://curl.haxx.se/)从2013年9月就开始对http2提供实验性的支持。
 
 为了遵从curl的要旨，我们尽可能全方位地支持http2。curl通常被用作一个网站连接测试工具，希望这项使命也能在http2上被得以延续。
 
@@ -18,7 +18,7 @@ curl通过升级头部支持基于标准TCP的http2. 当发起一个使用http2�
 
 ## 11.3. TLS和相关库
 
-curl可以使用许多不同TLS的底层库来提供TLS支持，http2也得这样。TLS兼容http2的挑战来自于对APLN以及一些NPN扩展的支持。
+curl可以使用许多不同TLS的底层库来提供TLS支持，http2也得这样。TLS兼容http2的挑战来自于对ALPN以及一些NPN扩展的支持。
 
 基于最新版本的OpenSSL或NSS编译curl可以同时获得ALPN和NPN支持。而使用GnuTLS或PolarSSL只能得到ALPN。
 
@@ -34,11 +34,11 @@ curl可以使用许多不同TLS的底层库来提供TLS支持，http2也得这�
 
 ### 11.5.2 多路复用
 
-正如libcurl想尽可能量维持以前的用法，你需要通过[CURLMOPT_PIPELINING](http://curl.haxx.se/libcurl/c/CURLMOPT_PIPELINING.html)参数为你的程序启用HTTP/2多路复用功能。不然的话，它会保持一个连接只发送一个请求。
+正如libcurl想尽可能量维持以前的用法，你需要通过[CURLMOPT_PIPELINING](https://curl.haxx.se/libcurl/c/CURLMOPT_PIPELINING.html)参数为你的程序启用HTTP/2多路复用功能。不然的话，它会保持一个连接只发送一个请求。
 
-另一个需要注意的小细节是，当你通过libcurl同时请求多个传输的时候，请使用多接口模式。这样能使应用程序能同时启用任意数量的传输。如果你宁愿让libcurl等待也要把它们放到同一个连接来传输的话，请使用[CURLOPT_PIPEWAIT](http://curl.haxx.se/libcurl/c/CURLOPT_PIPEWAIT.html)参数。
+另一个需要注意的小细节是，当你通过libcurl同时请求多个传输的时候，请使用多接口模式。这样能使应用程序能同时启用任意数量的传输。如果你宁愿让libcurl等待也要把它们放到同一个连接来传输的话，请使用[CURLOPT_PIPEWAIT](https://curl.haxx.se/libcurl/c/CURLOPT_PIPEWAIT.html)参数。
 
 ### 11.5.3 服务器推送
 
-libcurl 7.44.0及其后续版本开始支持HTTP/2服务器推送功能。你可以通过在[CURLMOPT_PUSHFUNCTION](http://curl.haxx.se/libcurl/c/CURLMOPT_PUSHFUNCTION.html)参数中设定一个推送回调来激活该功能。如果应用程序接受了该推送，它将为CURL建立一个新的传输，以便接受内容。<!-- 最后一句需要review -->
+libcurl 7.44.0及其后续版本开始支持HTTP/2服务器推送功能。你可以通过在[CURLMOPT_PUSHFUNCTION](https://curl.haxx.se/libcurl/c/CURLMOPT_PUSHFUNCTION.html)参数中设定一个推送回调来激活该功能。如果应用程序接受了该推送，它将为CURL建立一个新的传输，以便接受内容。<!-- 最后一句需要review -->
 
