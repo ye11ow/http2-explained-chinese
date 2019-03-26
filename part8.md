@@ -6,7 +6,7 @@
 
 到目前为止，http2还没被大范围部署使用，我们也无法确定到底会发生什么变化，但至少可以参考SPDY的例子和曾经做过的实验来进行大概的估计。
 
-http2减少了网络往返传输的数量，并且用多路复用和快速丢弃不需要的流的办法来完全避免了head of line blocking(线头阻塞)的困扰。
+http2减少了网络往返传输的数量，并且用多路复用和快速丢弃不需要的流的办法来完全避免head of line blocking(线头阻塞)的困扰。
 
 它也支持大量并行流，所以即使网站的数据分发在各处也不是问题。
 
@@ -60,7 +60,7 @@ Wireshark同样支持了http2, 所以用它来分析http2网络数据流着实�
 
 江湖上有太多传言暗示着这个世界越来越被Google所控制，但事实显然并非如此。这个协议是IETF制定的，就跟过去30年间很多其他协议一样。但不得不承认，SPDY是Google非常出色的成果。它不仅仅证明了开发一个新协议的可行性，还充分展现了新协议所能带来的好处。
 
-而Google也公开[声明](https://blog.chromium.org/2015/02/hello-http2-goodbye-spdy.html)了他们会在2016年移除Chrome里对SPDY和NPN的支持，并且极力推动服务器迁移至HTTP/2。2016年2月他们[声明](https://blog.chromium.org/2016/02/transitioning-from-spdy-to-http2.html)了SPDY和NPN会在Chrome 51被移除.
+而Google也公开[声明](https://blog.chromium.org/2015/02/hello-http2-goodbye-spdy.html)了他们会在2016年移除Chrome里对SPDY和NPN的支持，并且极力推动服务器迁移至HTTP/2。2016年2月他们[声明](https://blog.chromium.org/2016/02/transitioning-from-spdy-to-http2.html)了SPDY和NPN会在Chrome 51被移除。Chrome 51之后的版本已经不再支持SPDY和NPN了。
 
 ### 8.4.2. “这个协议只在浏览器上有用”
 
@@ -105,7 +105,7 @@ Telecom和一些其他网络服务商，例如ATIS开放网络联盟，表示为
 
 ### 8.4.8. “它并没有修复很多HTTP/1.1的短板”
 
-确实是这样。兼容HTTP/1.1的范式是我们的目标之一，所以一些老的HTTP功能仍然被保留。例如一些常用的协议头、可怕的cookies、验证头等等。但保留这些范式的好处就是我们在升级到新协议的时候少掉很多工作，也不需要重写很多底层的东西。Http2其实只是一个新的帧层。<!-- 那个"可怕的"cookies该怎么翻译好？ -->
+确实是这样。兼容HTTP/1.1的范式是我们的目标之一，所以一些老的HTTP功能仍然被保留。例如一些常用的协议头、讨厌的cookies、验证头等等。但保留这些范式的好处就是我们在升级到新协议的时候少掉很多工作，也不需要重写很多底层的东西。Http2其实只是一个新的帧层。<!-- 那个"可怕的"cookies该怎么翻译好？ -->
 
 ## 8.5. http2会被广泛部署吗？
 
