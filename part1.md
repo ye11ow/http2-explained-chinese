@@ -1,6 +1,6 @@
 # 1. 背景
 
-这篇文档会从技术和协议层面来介绍http2。文档起源于2014年4月我在斯德哥尔摩做了一次相关的演讲，在那之后我对演讲内容的细节进行了一些解释和补充，从而写出了这篇文档。
+这篇文档会从技术和协议层面来介绍http2。文档起源于2014年4月我在斯德哥尔摩做的一次相关的演讲，在那之后我对演讲内容的细节进行了一些解释和补充，从而写出了这篇文档。
 
 正式版http2规格标准叫做RFC 7540，发布于2015年5月15日：http://www.rfc-editor.org/rfc/rfc7540.txt
 
@@ -10,7 +10,7 @@
 
 ## 1.1 关于作者
 
-我的名字叫做Daniel Stenberg，在Mozilla工作。在过去20年，我一直致力于开源事业，参与了多个网络方面的项目。可能我最广为人知的身份是curl和libcurl的首席开发者。同时，我也参与了IETF HTTPbis工作组多年，工作在HTTP 1.1和http2标准化的一线.
+我的名字叫做Daniel Stenberg。在过去20年，我一直致力于开源事业，参与了多个网络方面的项目。可能我最广为人知的身份是curl和libcurl的首席开发者。同时，我也参与了IETF HTTPbis工作组多年，工作在HTTP 1.1和http2标准化的一线.
 
   Email: daniel@haxx.se
 
@@ -79,6 +79,5 @@
 - 8.3: Mention internet explorer too  
 - 8.3.1 Added "missing implementations"  
 - 8.4.3: Mention that TLS also increases success rate
-
 
 <!-- Review备注：这一章翻译已经没有明显问题。 -->
